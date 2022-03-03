@@ -334,19 +334,4 @@ Unknown model type for /hdd1/dendrite_data/223198.223198.0.im.out
 Updated past epoch by 0 adding new info for: /hdd1/dendrite_data/223198.223198.0.im.out
 Epoch 9: Enough time has passed, going to check for all available models.
 There are no models for the current epoch!
-Exception in thread Thread-12:
-Traceback (most recent call last):
-  File "/hdd1/anaconda3/envs/dendrite/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/hdd1/anaconda3/envs/dendrite/lib/python3.8/threading.py", line 1254, in run
-    self.function(*self.args, **self.kwargs)
-  File "command_client.py", line 1093, in contrast_models_and_respond
-    new_vom_fnames, newly_fingerprinted_model_starts = combine_current_epoch_models(
-  File "command_client.py", line 778, in combine_current_epoch_models
-    raise Exception( "WTF" )
-Exception: WTF
-Exception ignored in: <module 'threading' from '/hdd1/anaconda3/envs/dendrite/lib/python3.8/threading.py'>
-Traceback (most recent call last):
-  File "/hdd1/anaconda3/envs/dendrite/lib/python3.8/threading.py", line 1388, in _shutdown
-    lock.acquire()
-KeyboardInterrupt: 
+

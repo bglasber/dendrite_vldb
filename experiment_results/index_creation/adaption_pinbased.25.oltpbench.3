@@ -1,0 +1,31 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/hdd1/oltpbench/lib/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+21:29:10,400 (DBWorkload.java:267) INFO  - ======================================================================
+
+Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+Configuration: config/sample_pgycsb_config.xml
+Type:          POSTGRES
+Driver:        org.postgresql.Driver
+URL:           jdbc:postgresql://localhost:5432/ycsb
+Isolation:     TRANSACTION_SERIALIZABLE
+Scale Factor:  1000.0
+
+21:29:10,402 (DBWorkload.java:268) INFO  - ======================================================================
+21:29:10,437 (DBWorkload.java:830) INFO  - Creating 25 virtual terminals...
+21:29:10,649 (DBWorkload.java:835) INFO  - Launching the YCSB Benchmark with 1 Phase...
+21:29:10,685 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=YCSB] [Serial=false] [Time=300] [WarmupTime=0] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[100.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]] [ActiveWorkers=25]
+21:29:11,683 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+21:34:11,682 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+21:34:11,700 (ThreadBench.java:508) INFO  - Attempting to stop worker threads and collect measurements
+21:34:11,708 (ThreadBench.java:247) INFO  - Starting WatchDogThread
+21:34:15,597 (DBWorkload.java:841) INFO  - ======================================================================
+21:34:15,618 (DBWorkload.java:842) INFO  - Rate limited reqs/s: Results(nanoSeconds=300000050323, measuredRequests=12769739) = 42565.78952653924 requests/sec
+21:34:15,625 (DBWorkload.java:663) INFO  - Upload Results URL: com.oltpbenchmark.util.ResultUploader@41dd05a
+21:34:15,640 (DBWorkload.java:696) INFO  - Output Raw data into file: results/oltpbench.437.csv
+21:36:09,577 (DBWorkload.java:715) INFO  - Output summary data into file: results/oltpbench.421.summary
+21:36:09,613 (DBWorkload.java:722) INFO  - Output DBMS parameters into file: results/oltpbench.421.params
+21:36:09,646 (DBWorkload.java:729) INFO  - Output DBMS metrics into file: results/oltpbench.421.metrics
+21:36:09,708 (DBWorkload.java:736) INFO  - Output experiment config into file: results/oltpbench.421.expconfig
