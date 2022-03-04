@@ -1,0 +1,26 @@
+17:47:39,684 (DBWorkload.java:267) INFO  - ======================================================================
+
+Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+Configuration: config/sample_tpcc_config.xml
+Type:          POSTGRES
+Driver:        org.postgresql.Driver
+URL:           jdbc:postgresql://localhost:5432/tpcc
+Isolation:     TRANSACTION_READ_COMMITTED
+Scale Factor:  100.0
+
+17:47:39,686 (DBWorkload.java:268) INFO  - ======================================================================
+17:47:39,720 (DBWorkload.java:830) INFO  - Creating 20 virtual terminals...
+17:47:39,742 (DBWorkload.java:835) INFO  - Launching the TPCC Benchmark with 1 Phase...
+17:47:39,780 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=TPCC] [Serial=false] [Time=1200] [WarmupTime=0] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[45.0, 43.0, 4.0, 4.0, 4.0]] [ActiveWorkers=20]
+17:47:40,770 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+18:07:41,771 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+18:07:41,783 (ThreadBench.java:508) INFO  - Attempting to stop worker threads and collect measurements
+18:07:41,787 (ThreadBench.java:247) INFO  - Starting WatchDogThread
+18:07:43,524 (DBWorkload.java:841) INFO  - ======================================================================
+18:07:43,546 (DBWorkload.java:842) INFO  - Rate limited reqs/s: Results(nanoSeconds=1201000007766, measuredRequests=2642818) = 2200.5145569615356 requests/sec
+18:07:43,555 (DBWorkload.java:663) INFO  - Upload Results URL: com.oltpbenchmark.util.ResultUploader@49c90a9c
+18:07:43,717 (DBWorkload.java:696) INFO  - Output Raw data into file: results/oltpbench.456.csv
+18:08:08,342 (DBWorkload.java:715) INFO  - Output summary data into file: results/oltpbench.440.summary
+18:08:08,487 (DBWorkload.java:722) INFO  - Output DBMS parameters into file: results/oltpbench.440.params
+18:08:08,511 (DBWorkload.java:729) INFO  - Output DBMS metrics into file: results/oltpbench.440.metrics
+18:08:08,696 (DBWorkload.java:736) INFO  - Output experiment config into file: results/oltpbench.440.expconfig
