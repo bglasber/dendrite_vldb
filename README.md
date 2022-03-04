@@ -9,5 +9,5 @@ Functionally, the code for these is the same except that Dendrite-Pin
 has some customized thread-local data storage code. This is because Pin
 does not support TLS coming from built-in language features.
 
-Notebook with graph generation over high level experiment results is in
-experiment\_results. Raw result files uploaded soon in same directory.
+Notebook with graph generation, and experiment results is in
+experiment\_results.
